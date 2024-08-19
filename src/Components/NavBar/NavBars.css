@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+
+:root {
+	--def-transition-duration:.2s;
+	--mainColor: #29335c;
+	--mainColorLight: #5767aa;
+	
+	--textColor: #eee;
+}
+
+section{
+  position: fixed;
+  z-index: 100;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  width:100%;
+  height:10vh;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  top:0;
+  align-items: center;
+  justify-content: center;
+
+}
+header {
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+	height: 90%;
+	width:90%;
+	color: var(--textColor);
+}
+
+ul{
+    display: flex;
+    list-style: none;
+	gap:5rem;
+}
+nav ul a{
+    color:white;
+	text-decoration: none;
+	transition-property:color ;
+	font-size:1rem;
+	gap:2rem;
+}
+nav ul a:hover {
+	color: #adadaf;
+	
+}
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+header div,
+nav {
+	display: flex;
+	align-items: center;
+    padding: 30px;
+}
+
+
+.Sub-menu{
+	position: relative;
+	gap:0.5rem;
+	display:flex;
+	align-items: center;
+	justify-content:flex-end;
+  
+  }
+  .Sub-menu ul{
+	position: absolute;
+	top:120%;
+	left:-2rem;
+	background-color:#212224 ;
+	border-radius: .5rem;
+	padding:1rem;
+	/* display: none; */
+	z-index:100;
+	transition-property: background-color;
+	
+  }
+  .Sub-menu ul a{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+    min-width:13rem;
+	border-radius: .5rem;
+	
+  }
+  .Sub-menu:hover ul,
+  .Sub-menu ul:hover {
+	display: block; 
+  }
+  
+  .Sub-menu ul a:hover{
+	background-color:#2C2D2F;
+	padding:1rem 1.5rem;
+	color:#adadaf;
+	transition-property: color;
+  }
+  .Sub-menu ul{
+	left:-3rem;
+  }
+  .Sub-menu ul{
+	display: block;
+	left:-2rem;
+	visibility: hidden;
+	transform: translateX(-4rem);
+	opacity: 0;
+	transition-property:visibility,transform,opacity;
+  }
+  .Sub-menu:hover ul{
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0);
+  }
+  nav ul a,
+  .Sub-menu ul,
+  .Sub-menu ul,
+  .Sub-menu ul a:hover,
+  nav ul a::before
+  {
+	transition-duration: var(--def-transition-duration);
+	transition-timing-function: ease-in-out;
+  }
+  .buttonbook{
+	display: flex;
+    align-items: center; 
+	color:white;
+	width: fit-content;
+    padding: 10px 20px; 
+    border-radius: 50px; 
+    cursor: pointer; 
+	border: 2px solid white; 
+    transition: background-color 0.3s, transform 0.3s; 
+	background-color:#2C2D2F ;
+	font-weight: 800;
+	font-size:1rem;
+	
+  }
+  .btnLink{
+	text-decoration: none;
+  }
+  .buttonbook:hover {
+    background-color: rgba(35, 196, 245, 0.119); 
+    transform: scale(1.05); 
+  }
+
+
+  @media only screen and (max-width: 1024px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+	nav ul{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+	}
+
+	header nav{
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+		z-index: 100;
+		cursor: pointer;
+		
+	}
+	
+	header nav ul  a:hover{
+		color:red;
+		transform: scale(4rem);
+		font-size: 2rem;
+		transition-property:font-size transform color;
+		transition-duration: 0.5s;
+		transition-timing-function: ease-in-out;
+	}
+	header .responsive_nav {
+		transform: translateY(100vh);
+		transition-property:transform;
+		transition-duration: 0.9s;
+		transition-timing-function: ease-in-out;
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+
+	nav a {
+		font-size: 1.3rem;
+	}
+	.side{
+		gap:1.5rem;
+	}
+}
+
+@media(min-width:1025px) and (max-width:1200px){
+
+}
+  

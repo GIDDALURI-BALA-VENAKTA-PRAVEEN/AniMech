@@ -1,0 +1,61 @@
+
+.vc-background{
+ 
+    margin-top: 150px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.video-back {
+background-color: black;
+    width: 55%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.vc-grid {
+    display: grid;
+    background-color: black;
+    color: white;
+    grid-template-columns: 5fr;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 500ms ease-in-out;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+    .video-back {
+        width: 70%;
+    }
+    .vc-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .video-back {
+        width: 90%;
+    }
+    .vc-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}

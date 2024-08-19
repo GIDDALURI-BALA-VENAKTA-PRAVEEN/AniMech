@@ -1,0 +1,46 @@
+.heros {
+  flex-wrap: wrap;
+  margin: 0px 120px;
+  margin-top: 200px;
+  align-items: center;
+}
+.texts h3 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 300px;
+}
+.texts p {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 50px;
+}
+
+.explores {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.ic {
+  font-size: 60px;
+  font-weight: 30px;
+  display: inline-block;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(10);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

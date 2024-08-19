@@ -1,0 +1,160 @@
+.back {
+ 
+    width: 100%;
+    min-height: 85vh; 
+    background-color: black;
+    padding: 20px;
+   
+  }
+  
+  .grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    padding: 50px; 
+  }
+  
+  .cols {
+   
+    background-color: black;
+    color: white;
+    padding: 60px;  
+  }
+  
+  .cols p {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 40px;
+  }
+  
+  .form-container {
+   
+    background-color: black;
+    padding: 60px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  
+  .name-group {
+    display: inline-block;
+    width: 48%;
+    margin-right: 2%;
+  }
+  
+  .name-group:last-child {
+    margin-right: 0;
+  }
+  
+  .full-width {
+    width: 100%;
+    padding: 10px;
+    
+  }
+  .Demo-btn{
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .full-widths {
+    background-color: #007bff;
+    color: white;
+    width: 90px;
+    border-radius:20px ;
+    border: none;
+    cursor: pointer;
+  }
+  .for{
+    width: 10px;
+    display: flex;
+    color: white;
+  }
+  .Demo-btn:hover {
+    background-color: #d0a465;
+    transition-property:background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+  }
+  .DemoText{
+    animation:fade-out linear;
+    animation-timeline: view();
+    animation-range: exit -300px;
+  }
+  @keyframes fade-out{
+    to{opacity: 0;}
+  }
+  
+  /* Responsive Styles */
+  
+  /* Small devices (phones, 600px and down) */
+  @media (max-width: 600px) {
+    .grids {
+      grid-template-columns: 1fr;
+      padding: 20px;
+    }
+  
+    .cols, .form-container {
+      padding: 20px;
+ 
+    }
+  
+    .name-group {
+      display: block;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .form-group {
+      margin-bottom: 15px;
+    }
+  
+    /* .back {
+      overflow-y: scroll; 
+    } */
+
+
+  }
+  
+  /* Medium devices (tablets, 600px to 1024px) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .grids {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 30px;
+    }
+  
+    .cols, .form-container {
+      padding: 10px;
+    }
+  
+    .name-group {
+      width: 48%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Large devices (desktops, 1024px and up) */
+  @media (min-width: 1025px) {
+    .grids {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 50px;
+    }
+  
+    .cols, .form-container {
+      padding: 60px;
+    }
+  
+    .name-group {
+      width: 48%;
+    }
+  }
+  
+
+
+
+/* Optional: Style for form elements for consistency */
+

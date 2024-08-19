@@ -1,0 +1,28 @@
+.project-vc{
+
+    width: 100%;
+    height: 100%;
+    float:left;
+    top:10vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: none;
+    position: fixed; 
+    object-fit: cover;
+    z-index: -1;
+    
+}
+/* .con{
+    top:10vh;
+} */
+
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{
+        opacity: 1;
+    }
+}
+    .fade-in{
+        animation: fadeIn 500ms ease-in-out;
+    }

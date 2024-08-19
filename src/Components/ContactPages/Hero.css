@@ -1,0 +1,58 @@
+.hero{
+    
+    margin: 0px 120px;
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+.text h3{
+  
+    color:#fff;
+    font-size: 50px;
+    font-weight: 300px;
+    line-height: 100px;
+}
+.text p{
+color:#fff;
+font-size: 20px;
+font-weight: 150;
+line-height: px;
+}
+
+
+.explore {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    width: fit-content; 
+    margin-top: 30px; 
+    padding: 10px 20px; 
+    border-radius: 50px; 
+    cursor: pointer; 
+    border: 2px solid white; 
+     
+    transition: background-color 0.3s, transform 0.3s; 
+  }
+  
+  .explore:hover {
+    background-color: rgba(35, 196, 245, 0.119); 
+    transform: scale(1.05); 
+  }
+  
+  .explore p {
+    color:white; 
+    font-size: 18px; 
+    font-weight: 600; 
+    margin: 0; 
+  }
+  
+  .explore img {
+    width: 24px; 
+    height: auto; 
+    transition: transform 0.3s; 
+  }
+  
+  
+  .explore:hover img {
+    transform: translateX(10px); 
+  }
+  

@@ -1,0 +1,80 @@
+.bgi {
+ 
+    position: relative;
+    width: 100%;
+    height: 90vh; 
+    overflow: hidden;
+  
+  }
+  
+  .inf {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 75%;
+    font-family: Arial, sans-serif;
+    z-index: 2; 
+
+   /* border:2px solid yellow;
+   animation:fade-out-Main linear;
+   animation-timeline:view();
+  animation-range: exit -1000px; */
+  }
+  .inf h3 {
+    font-size: 60px;
+    margin: 0;
+    line-height: 1.2;
+
+    /* border:2px solid yellow; */
+    animation:fade-out-Main linear;
+    animation-timeline:view();
+   animation-range: exit -300px;
+  }
+  
+  .inf p {
+    font-size: calc(1rem + 0.5vw);
+    margin-top: 10px;
+    line-height: 1.8;
+  }
+  
+  @media (max-width: 768px) {
+    .inf {
+      max-width: 80%;
+      left: 10%;
+    }
+  
+    .inf h3 {
+      font-size: calc(1.5rem + 1vw);
+    }
+  
+    .inf p {
+      font-size: calc(0.9rem + 0.5vw);
+    }
+  }
+
+
+  .imgs {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    animation:ImageAnimation linear forwards;
+    animation-timeline: view();
+    /* animation-range: exit -2000px; */
+  }
+  
+
+  /* .DemoMain-Text{
+    animation:fade-out-Main linear;
+    animation-timeline:view();
+   animation-range: exit -1000px;
+  } */
+  @keyframes fade-out-Main{
+    to {opacity: 0;}
+  }
+  /* @keyframes ImageAnimation{
+    0%,90% {opacity: 1;}
+    100% {opacity: 0;}
+  } */

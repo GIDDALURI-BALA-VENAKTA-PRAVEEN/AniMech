@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Conta.css">
+    <title>Contact Page</title>
+    <style>
+        .bgsm {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.clients {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.one {
+    width: 150px;
+    border-radius: 50%; /* Circular images */
+    padding: 20px;
+    margin: 0 10px; /* Space between images */
+}
+
+.grid-contain {
+    display: grid;
+    grid-template-columns: 2fr 3fr; /* Main column wider than sub-columns */
+    gap: 16px; /* Space between columns */
+    padding: 16px; /* Padding inside the grid container */
+}
+
+.main-column {
+    padding: 8px; /* Padding inside the main column */
+}
+
+.sub-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    gap: 16px; /* Space between sub-columns */
+    padding: 8px; /* Padding inside the sub-columns container */
+}
+
+.sub-column {
+    padding: 8px;
+    border: 2px solid #0000ff; /* Border around each sub-column */
+}
+
+ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 8px; /* Space between list items */
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px; /* Extra space below the title */
+}
+
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 768px) {
+    .grid-contain {
+        grid-template-columns: 1fr; /* Stack columns on small screens */
+    }
+
+    .sub-columns {
+        grid-template-columns: 1fr; /* Stack sub-columns vertically */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="bgsm">
+        <div class="clients">
+            <img src="../ContactPages/1.jpg" class="one" alt="Client 1">
+            <img src="../ContactPages/1.jpg"class="one" alt="Client 2">
+            <img src="../ContactPages/1.jpg" class="one" alt="Client 3">
+        </div>
+
+        <div class="grid-contain">
+            <div class="main-column">
+                <div class="main-content">
+                    <h1>We are Animech</h1>
+                    <p>
+                        We are Animech – a leader in advanced visualization tools that
+                        redefine digital commerce. With our expertise, we strive for
+                        tailor-made solutions that improve sales and customer experience for
+                        our partners.
+                    </p>
+                    <p>Ekeby Bruk 4J</p>
+                    <p>752 63 Uppsala</p>
+                    <p>Sweden</p>
+                    <p>
+                        T: <span>+46 (0) 18 53 92 20</span>
+                    </p>
+                    <p>
+                        E: <span>hello@animech.com</span>
+                    </p>
+                </div>
+            </div>
+            <div class="sub-columns">
+                <div class="sub-column">
+                    <ul>
+                        <li class="title">This is us.</li>
+                        <li>About us</li>
+                        <li>Careers</li>
+                        <li>Articles</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+                <div class="sub-column">
+                    <ul>
+                        <li class="title">Work</li>
+                        <li>Elfa</li>
+                        <li>Cytia</li>
+                        <li>Volkswagen</li>
+                        <li>KIA</li>
+                    </ul>
+                </div>
+                <div class="sub-column">
+                    <ul>
+                        <li class="title">Products</li>
+                        <li>Anipart</li>
+                        <li>Aniconfigrator</li>
+                        <li>Showroom</li>
+                        <li>About Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

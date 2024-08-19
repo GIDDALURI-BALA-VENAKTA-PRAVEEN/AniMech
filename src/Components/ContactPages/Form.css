@@ -1,0 +1,91 @@
+.bgs {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.grid-containers {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for first line */
+    gap: 30px;
+    padding-left: 110px;
+    padding-right: 60px;
+}
+
+.grid-item {
+    grid-column: span 2; /* Makes all items span the full width except the first row */
+}
+
+.half-width {
+   
+    width: 100%; /* Adjusted width to create a gap between fields */
+    padding: 8px;
+    font-size: 1rem;
+   
+}
+
+
+.full-width {
+    grid-column: span 2; /* Span the entire grid width */
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.grid-item textarea {
+    height: 100px; /* Set height for the message field */
+}
+
+.grid-item button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.grid-item button:hover {
+    background-color: red;
+}
+
+.full-widths {
+    max-width: 100%;
+    margin-left: 110px;
+    margin-top:20px;
+}
+
+input, textarea {
+    color: white;
+    background-color: #454545;
+    border: none;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    transition: border-color 0.3s ease; /* Smooth transition for focus effect */
+}
+
+/* Focus State */
+input:focus, textarea:focus {
+    border-bottom: 2px solid white; /* Change bottom border color on focus */
+}
+
+/* Label Styling */
+label {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    display: block;
+}
+@media (max-width: 768px){
+    
+}
